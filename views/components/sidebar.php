@@ -34,24 +34,12 @@
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="?c=administrador&m=index">Usuarios</a></li>
                                     <li><a href="?c=administrador&m=create">Crear</a></li>
-                                    <li><a href="?c=administrador&m=edit">Editar</a></li>
-                                    <li><a href="?c=administrador&m=destroy">Eliminar</a></li>
+                                    <li><a href="?c=administrador&m=edit&userId=111">Editar</a></li>
+                                    <li><a href="?c=administrador&m=index">Eliminar</a></li>
                                 </ul>
                             </li>
                 
-                            <li>
-                                <a href="javascript: void(0);">
-                                    <i class="mdi mdi-google-pages"></i>
-                                    <span> Torres </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                <li><a href="?c=torres&m=torre_1">Torre 1</a></li>
-                                    <li><a href="?c=torres&m=torre_2">Torre 2</a></li>
-                                    <li><a href="?c=torres&m=torre_3">Torre 3</a></li>
-                                    <li><a href="?c=torres&m=torre_4">Torre 4</a></li>
-                                </ul>
-                            </li>
+                           
                         </ul>
 
                     </div>
