@@ -2,7 +2,7 @@
 <div class="navbar-custom">
     <ul class="list-unstyled topnav-menu float-right mb-0">
         <li class="dropdown notification-list">
-            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#"
+            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="http://localhost/Admired_principal-main/"
                 role="button" aria-haspopup="false" aria-expanded="false">
                 <img src="./assets/imagenes/andres.jpeg" alt="user-image" class="rounded-circle">
                 <span class="d-none d-sm-inline-block ml-1 font-weight-medium"></span>
@@ -10,8 +10,8 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                 <!-- item-->
-                <div class="dropdown-header noti-title">
-                    <h6 class="text-overflow text-white m-0">Bienvenido !</h6>
+                <div >
+                    <h6 class="text-overflow text-white m-0">Bienvenido</h6>
                 </div>
 
                 <!-- item-->
@@ -19,9 +19,9 @@
                 <div class="dropdown-divider"></div>
 
                 <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <a href="javascript:void(0);">
                     <i class="mdi mdi-logout-variant"></i>
-                    <span><a href="http://localhost/ADMIREDD-main/?">Cerrar Sesion</a></span>
+                    <span><a href="http://localhost/ADMIREDD-main%203/?">Cerrar Sesion</a></span>
                 </a>
 
             </div>

@@ -11,6 +11,7 @@ if (mysqli_connect_errno()) {
   exit();
 }
 
+
 $nombre = mysqli_real_escape_string($conexion, $_REQUEST['nombre']);
 $apellido = mysqli_real_escape_string($conexion, $_REQUEST['apellido']);
 $usuario = mysqli_real_escape_string($conexion, $_REQUEST['usuario']);
@@ -24,12 +25,26 @@ $cargo = mysqli_real_escape_string($conexion, $_REQUEST['cargo']);
 $torre = mysqli_real_escape_string($conexion, $_REQUEST['torre']);
 $apto = mysqli_real_escape_string($conexion, $_REQUEST['apto']);
 
-$query = "INSERT INTO usuarios (NOMBRE, APELLIDO, USUARIO, TIPO_DOCUMENTO_ID, NO_DOCUMENTO, FECHA_NACIMIENTO, EMAIL, CONTRASENA, TELEFONO, CARGO_ID, TORRE, APTO) 
-VALUES ('$nombre', '$apellido', '$usuario', '$tipoDocumento', '$numeroDocumento', '$fechaNacimiento', '$correo', '$contrasena', '$telefono', '$cargo', '$torre', '$apto')";
+
+$query = "UPDATE usuarios
+    SET NOMBRE = '$nombre',
+        APELLIDO = '$apellido',
+        USUARIO = '$usuario',
+        TIPO_DOCUMENTO_ID = '$tipoDocumento',
+        NO_DOCUMENTO = '$numeroDocumento',
+        FECHA_NACIMIENTO = '$fechaNacimiento',
+        EMAIL = '$correo',
+        CONTRASENA = '$contrasena',
+        TELEFONO = '$telefono',
+        CARGO_ID = '$cargo',
+        TORRE = '$torre',
+        APTO = '$apto' 
+    WHERE ID = " . $_GET['userId'];
 
 $resultado = mysqli_query($conexion, $query) or die("error: " . mysqli_error($conexion));
+
 mysqli_close($conexion);
-echo "El usuario ha sido registrado exitosamente";
+echo "El usuario ha sido editado exitosamente";
 header("Location: /ADMIREDD-main%203/?c=administrador&m=index", true, 301);
 
 if (mysqli_connect_errno()) {

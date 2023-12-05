@@ -33,12 +33,14 @@
             <!--Formulario de Login y registro-->
             <div class="contenedor__login-register">
                 <!--Login-->
-                <form action="" class="formulario__login">
-                    <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico" value="">
-                    <input type="password" placeholder="Contraseña" value="">
-                    <button><a href="?c=administrador&m=index">Entrar</a></button>
+            <form action="views/administrador/login1.php" method="post">
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="submit" value="Iniciar sesión">
                 </form>
+                
 
                 <!--Register-->
                 <form action="views/dashboard/DB2.php" method="post" class="formulario__register">
@@ -51,16 +53,13 @@
                         <option value="2">C.E.</option>
                         <option value="3">NIT.</option>
                     </select>
-                    <input type="text" name="numero documento" placeholder="Numero documento">
-                    <input type="text" name="fecha_nacimiento" placeholder="Fecha nacimiento">
-                    <input type="text" name="correo_electronico" placeholder="Correo Electronico">
-                    <input type="text" name="contraseña" placeholder="Contraseña">
+                    <input type="text" name="no_documento" placeholder="no_documento">
+                    <input type="date" name="fecha_nacimiento" placeholder="Fecha nacimiento">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="password" name="contrasena" placeholder="Contrasena">
                     <input type="text" name="telefono" placeholder="Telefono">
                     <select name="cargo">
-                        <option value="1">empleado</option>
                         <option value="2">administrador</option>
-                        <option value="3">propietario</option>
-                        <option value="3">residente</option>
                     </select>
                     <input type="text" name="torre" placeholder="Torre">
                     <input type="text" name="apto" placeholder="Apto">
