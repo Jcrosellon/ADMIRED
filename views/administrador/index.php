@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./assets/css/index.css">
+<link rel="stylesheet" href="../../assets/css/index.css">
 <div class="content-page">
     <div class="content">
         <div class="container-fluid">
