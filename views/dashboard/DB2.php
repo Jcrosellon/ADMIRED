@@ -30,11 +30,9 @@ VALUES ('$nombre', '$apellido', '$usuario', '$tipoDocumento', '$numeroDocumento'
 $resultado = mysqli_query($conexion, $query) or die("error: " . mysqli_error($conexion));
 mysqli_close($conexion);
 echo "El usuario ha sido registrado exitosamente";
-header("Location: /ADMIREDD-main%203/?c=administrador&m=index", true, 301);
+header("Location: /ADMIREDD-main/?c=administrador&m=index", true, 301);
 
 if (mysqli_connect_errno()) {
   echo "Error al conectar con MySQL: " . mysqli_connect_error();
   exit();
 }
-
-?> 
