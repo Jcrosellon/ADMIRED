@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login y Register - MagtimusPro</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 
     <link rel="stylesheet" href="./assets/css/login.css">
@@ -33,14 +35,14 @@
             <!--Formulario de Login y registro-->
             <div class="contenedor__login-register">
                 <!--Login-->
-            <form action="views/administrador/login1.php" method="post">
+                <form action="views/administrador/login1.php" method="post">
                     <label for="email">Correo electrónico:</label><br>
                     <input type="email" id="email" name="email" required><br>
                     <label for="password">Contraseña:</label><br>
                     <input type="password" id="password" name="password" required><br><br>
                     <input type="submit" value="Iniciar sesión">
                 </form>
-                
+
 
                 <!--Register-->
                 <form action="views/dashboard/DB2.php" method="post" class="formulario__register">
