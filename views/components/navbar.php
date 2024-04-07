@@ -22,7 +22,7 @@
                 <!-- item-->
                 <a href="javascript:void(0);">
                     <i class="mdi mdi-logout-variant"></i>
-                    <span><a href="http://localhost/ADMIREDD-main/?">Cerrar Sesion</a></span>
+                    <span><a href="http://localhost/SENA/ADMIREDD/?">Cerrar Sesion</a></span>
                 </a>
 
             </div>

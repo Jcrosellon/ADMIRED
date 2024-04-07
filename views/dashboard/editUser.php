@@ -45,7 +45,7 @@ $resultado = mysqli_query($conexion, $query) or die("error: " . mysqli_error($co
 
 mysqli_close($conexion);
 echo "El usuario ha sido editado exitosamente";
-header("Location: /ADMIREDD-main/?c=administrador&m=index", true, 301);
+header("Location: /SENA/ADMIREDD/?c=administrador&m=index", true, 301);
 
 if (mysqli_connect_errno()) {
   echo "Error al conectar con MySQL: " . mysqli_connect_error();
