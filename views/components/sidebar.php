@@ -34,8 +34,8 @@
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="?c=administrador&m=index">Usuarios</a></li>
                                     <li><a href="?c=administrador&m=create">Crear</a></li>
-                                    <li><a href="?c=administrador&m=edit&userId=111">Editar</a></li>
-                                    <li><a href="?c=administrador&m=index">Eliminar</a></li>
+                                    <li><a href="?c=administrador&m=edit&userId=115">Editar</a></li>
+                                    
                                 </ul>
                             </li>
                 

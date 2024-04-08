@@ -78,8 +78,7 @@
                                                             <?php echo $rows['APTO']; ?>
                                                         </td>
                                                         <td>
-                                                            <a href="?c=administrador&m=show&userId=<?php echo $rows['ID']; ?>"
-                                                                class="boton1">Detalle</a>
+                                                            
                                                             <a href="?c=administrador&m=edit&userId=<?php echo $rows['ID']; ?>"
                                                                 class="boton2">Editar</a>
                                                             <a href="?c=administrador&m=destroy&userId=<?php echo $rows['ID']; ?>"

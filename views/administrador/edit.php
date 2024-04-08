@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./assets/css/create.css">
+<link rel="stylesheet" href="./assets/css/destroy.css">
 <div class="content-page">
     <div class="content">
 
@@ -20,15 +20,15 @@
                                 placeholder="Ingrese su Apellido" value="<?php echo $user['APELLIDO'] ?>">
                             <input class="controls" type="text" name="usuario" id="usuario"
                                 placeholder="Ingrese su Apellido" value="<?php echo $user['USUARIO'] ?>">
-                            <select name="tipo_documento">
+                            <select name="tipo_documento" disabled>
                                 <option <?php echo $user['TIPO_DOCUMENTO_ID'] == 1 ? 'selected' : '' ?> value="1">C.C.</option>
                                 <option <?php echo $user['TIPO_DOCUMENTO_ID'] == 2 ? 'selected' : '' ?> value="2">C.E.</option>
                                 <option <?php echo $user['TIPO_DOCUMENTO_ID'] == 3 ? 'selected' : '' ?> value="3">NIT.</option>
                             </select>
                             <input class="controls" type="text" name="no_documento" id="no_documento"
-                                placeholder="Ingrese su Nuemero de Documento" value="<?php echo $user['NO_DOCUMENTO'] ?>">
+                                placeholder="Ingrese su Nuemero de Documento" value="<?php echo $user['NO_DOCUMENTO'] ?>" readonly>
                             <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
-                                placeholder="Ingrese su Fecha de Nacimiento" value="<?php echo $user['FECHA_NACIMIENTO'] ?>">
+                                placeholder="Ingrese su Fecha de Nacimiento" value="<?php echo $user['FECHA_NACIMIENTO'] ?>"readonly>
                             <input class="controls" type="text" name="email" id="email"
                                 placeholder="Ingrese su Correo Electronico" value="<?php echo $user['EMAIL'] ?>">
                             <input class="controls" type="char" name="contrasena" id="contrasena"
@@ -37,7 +37,6 @@
                                 placeholder="Ingrese su Numero de telefono" value="<?php echo $user['TELEFONO'] ?>">
                             <select name="cargo">
                                 <option <?php echo $user['CARGO_ID'] == 1 ? 'selected' : '' ?> value="1">empleado</option>
-                                <option <?php echo $user['CARGO_ID'] == 2 ? 'selected' : '' ?> value="2">administrador</option>
                                 <option <?php echo $user['CARGO_ID'] == 3 ? 'selected' : '' ?> value="3">propietario</option>
                                 <option <?php echo $user['CARGO_ID'] == 4 ? 'selected' : '' ?> value="4">residente</option>
                             </select>

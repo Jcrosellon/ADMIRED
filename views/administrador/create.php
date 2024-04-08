@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./assets/css/create.css">
+<link rel="stylesheet" href="./assets/css/destroy.css">
 <div class="content-page">
                 <div class="content">
                     
@@ -37,7 +37,6 @@
                                 placeholder="Ingrese su Numero de telefono">
                             <select name="cargo">
                                 <option value="1">empleado</option>
-                                <option value="2">administrador</option>
                                 <option value="3">propietario</option>
                         <option value="3">residente</option>
                             </select>
