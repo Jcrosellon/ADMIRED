@@ -55,23 +55,7 @@
 
                                             <tbody id="tbody">
 
-                                            <tfoot>
-                                                <tr class="text-center">
-                                                    <th>ID</th>
-                                                    <th>NOMBRE</th>
-                                                    <th>APELLIDO</th>
-                                                    <th>USUARIO</th>
-                                                    <th>TIPO_DOCUMENTO_ID</th>
-                                                    <th>NO_DOCUMENTO</th>
-                                                    <th>FECHA_NACIMIENTO</th>
-                                                    <th>EMAIL</th>
-                                                    <th>CONTRASENA</th>
-                                                    <th>TELEFONO</th>
-                                                    <th>CARGO_ID</th>
-                                                    <th>TORRE</th>
-                                                    <th>APTO</th>
-                                                </tr>
-                                            </tfoot>
+                                            
 
                                         </table>
 
@@ -156,65 +140,7 @@
                             </div>
                         </form>
                         <!-- End Form -->
-
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">NOMBRE</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">APELLIDO</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">USUARIO</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select name="tipo_documento">
-                            <option value="1">C.C.</option>
-                            <option value="2">C.E.</option>
-                            <option value="3">NIT.</option>
-                        </select>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">NO_DOCUMENTO</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
-                            placeholder="Ingrese su Fecha de Nacimiento">
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">EMAIL</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">CONTRASENA</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">TELEFONO</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select name="cargo">
-                            <option value="1">empleado</option>
-                            <option value="3">propietario</option>
-                            <option value="3">residente</option>
-                        </select>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">TORRE</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                        <label for="name">APTO</label>
-                    </div>
-                </div>
-                </form>
-                <!-- End Form -->
+                    
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
