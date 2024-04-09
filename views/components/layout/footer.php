@@ -28,24 +28,24 @@ require_once ('./views/components/sidebar-right.php')
 </ /a>
 
 <!-- Vendor js -->
-<script src="../../assets/js/vendor.min.js"></script>
+<script src="./assets/js/vendor.min.js"></script>
 <!-- plugin js -->
-<script src="../../assets/js/moment.min.js"></script>
-<script src="../../assets/js/jquery-ui.min.js"></script>
-<script src="../../assets/js/fullcalendar.min.js"></script>
+<script src="./assets/js/moment.min.js"></script>
+<script src="./assets/js/jquery-ui.min.js"></script>
+<script src="./assets/js/fullcalendar.min.js"></script>
 
 <!-- Calendar init -->
-<script src="../../assets/js/calendar.init.js"></script>
+<script src="./assets/js/calendar.init.js"></script>
 
 <!--Morris Chart-->
-<script src="../../assets/libs/morris-js/morris.min.js"></script>
-<script src="../../assets/libs/raphael/raphael.min.js"></script>
+<script src="./assets/libs/morris-js/morris.min.js"></script>
+<script src="./assets/libs/raphael/raphael.min.js"></script>
 
 <!-- Dashboard init js-->
-<script src="../../assets/js/pages/dashboard.init.js"></script>
+<script src="./assets/js/pages/dashboard.init.js"></script>
 
 <!-- App js -->
-<script src="../../assets/js/app.min.js"></script>
+<script src="./assets/js/app.min.js"></script>
 
 </body>
 

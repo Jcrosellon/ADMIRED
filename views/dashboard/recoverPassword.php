@@ -12,7 +12,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!--Css App-->
-  <link href="../../../assets/css/styleLogin.css" rel="stylesheet">
+  <link href="./assets/css/styleLogin.css" rel="stylesheet">
 
   <title>RECOVER PASSWORD - LOGIN FIREBASE</title>
 </head>
@@ -55,7 +55,7 @@
   <!--Script app-->
 
   <!--Script module-->
-  <script src="../../assets/js/user/main.js" type="module"></script>
+  <script src="./assets/js/user/main.js" type="module"></script>
 
 </body>
 

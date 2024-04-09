@@ -68,7 +68,7 @@
     crossorigin="anonymous"></script>
 
   <!--Script module-->
-  <script src="../../assets/js/user/main.js" type="module"></script>
+  <script src="./assets/js/user/main.js" type="module"></script>
 
 </body>
 

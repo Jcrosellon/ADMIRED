@@ -1,10 +1,10 @@
-<!-- <head>
-    <link type="image/x-icon" href="./assets/img/logos/logo.png" rel="icon">
+<!-- <head>-->
+    <link type="image/x-icon" href="../assets/img/logos/logo.png" rel="icon">
     <!--Bootstrap css-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <!--My style css-->
-<link href="../../assets/css/style.css" rel="stylesheet">
+<link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <!--Container preload-->
@@ -31,7 +31,7 @@
                                         <div class="d-flex">
                                             <button type="button" onclick="createUser()" class="btn btn-success"><img
                                                     class="img img-fluid"
-                                                    src="../../assets/img/icons/plus-square-fill.svg">
+                                                    src="./assets/img/icons/plus-square-fill.svg">
                                                 Crear usuario</button>
                                         </div>
                                         <hr>
@@ -46,13 +46,14 @@
                                                     <th>ACTIONS</th>
                                                 </tr>
                                             </thead>
-implementando-login-crud-firebase
+
                                             <tbody id="tbody">
 
                                             <tbody>
                                                 <?php
                                                 // LOOP TILL END OF DATA
-                                                while ($rows = $resultado->fetch_assoc()) {
+                                                while ($rows = $resultado->fetch_assoc()) 
+
                                                     ?>
                                                     <tr>
                                                         <!-- FETCHING DATA FROM EACH ROW OF EVERY COLUMN -->
@@ -102,10 +103,12 @@ implementando-login-crud-firebase
                                                                 class="boton2">Editar</a>
                                                             <a href="?c=administrador&m=destroy&userId=<?php echo $rows['ID']; ?>"
                                                                 class="boton3">Eliminar</a>
-
+                                                
                                                         </td>
-
-                                            </tbody>
+                                                
+                                           
+                                                    </tbody>
+                                                
                                             <tfoot>
                                                 <tr class="text-center">
                                                     <th>#</th>
@@ -141,18 +144,55 @@ implementando-login-crud-firebase
                     <div class="modal-body">
                         <!-- Form -->
                         <form action id="formUser">
-                            <input type="hidden" class="form-control" id="id" value>
+                            </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">NAME</label>
+                                <label for="name">NOMBRE</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nickname" placeholder="Nickname">
-                                <label for="nickname" required>NICKNAME</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">APELLIDO</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="img" placeholder="IMG" required>
-                                <label for="img" required>IMG</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">USUARIO</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">TIPO_DOCUMENTO_ID</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">NO_DOCUMENTO</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">FECHA_NACIEMIENTO</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">EMAIL</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">CONTRASENA</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">TELEFONO</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">CARGO_ID</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">TORRE</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
+                                <label for="name">APTO</label>
+                            </div>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="number" class="form-control" id="valor" placeholder="value" required>
@@ -178,7 +218,7 @@ implementando-login-crud-firebase
     <!--Script RFC4122-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.7/uuid.min.js"></script>
     <!--Script my script-->
-    <script src="../../assets/js/FirebaseGame.js"></script>
+    <script src="./assets/js/FirebaseGame.js"></script>
     <!--Script my script-->
-    <script src="../../assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </div>
