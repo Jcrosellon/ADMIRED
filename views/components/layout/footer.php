@@ -38,11 +38,11 @@ require_once ('./views/components/sidebar-right.php')
 <script src="./assets/js/calendar.init.js"></script>
 
 <!--Morris Chart-->
-<script src="./assets/libs/morris-js/morris.min.js"></script>
-<script src="./assets/libs/raphael/raphael.min.js"></script>
+<!-- <script src="./assets/libs/morris-js/morris.min.js"></script>
+<script src="./assets/libs/raphael/raphael.min.js"></script> -->
 
 <!-- Dashboard init js-->
-<script src="./assets/js/pages/dashboard.init.js"></script>
+<!-- <script src="./assets/js/dashboard.init.js"></script> -->
 
 <!-- App js -->
 <script src="./assets/js/app.min.js"></script>
