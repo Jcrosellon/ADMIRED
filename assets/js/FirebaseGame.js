@@ -63,13 +63,13 @@ class FirebaseGameUser {
         '<div class="btn-group " role="group" aria-label="Basic mixed styles example">' +
         '<button type="button" onclick="showUser(' +
         getId +
-        ')" class="btn btn-info"><img class="img img-fluid" src="../../assets/img/icons/eye-fill.svg"></button>' +
+        ')" class="btn btn-info"><img class="img img-fluid" src="./assets/img/icons/eye-fill.svg"></button>' +
         '<button type="button" onclick="editUser(' +
         getId +
-        ')" class="btn btn-warning"><img class="img img-fluid" src="../../assets/img/icons/pencil-square.svg"></button>' +
+        ')" class="btn btn-warning"><img class="img img-fluid" src="./assets/img/icons/pencil-square.svg"></button>' +
         '<button type="button" onclick="deleteUser(' +
         getId +
-        ')" class="btn btn-danger"><img class="img img-fluid" src="../../assets/img/icons/trash3-fill.svg"></button>' +
+        ')" class="btn btn-danger"><img class="img img-fluid" src="./assets/img/icons/trash3-fill.svg"></button>' +
         "</div>";
       rowTable +=
         "<tr>" +
