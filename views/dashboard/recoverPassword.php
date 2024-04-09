@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Favicons-->
-  <link rel="icon" type="image/x-icon" href="./assets/img/logos/logo.png" />
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logos/logo.png" />
+  <link rel="icon" type="image/x-icon" href="../../assets/img/logos/logo.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/logos/logo.png" />
   <!--Css Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!--Css App-->
-  <link href="./assets/css/styleLogin.css" rel="stylesheet">
+  <link href="../../assets/css/style.css" rel="stylesheet">
 
   <title>RECOVER PASSWORD - LOGIN FIREBASE</title>
 </head>
@@ -34,7 +34,7 @@
           </div>
           <div>
             <button type="submit" class="btn btn-primary w-100 mb-2">SEND</button>
-            <a href="./views/dashboard/create.php" class="btn btn-info w-100 mb-2">CREATE USER</a>
+            <a href="./create.php" class="btn btn-info w-100 mb-2">CREATE USER</a>
             <a href="./login.php" class="btn btn-secondary w-100">SING IN</a>
           </div>
         </form>
@@ -55,7 +55,7 @@
   <!--Script app-->
 
   <!--Script module-->
-  <script src="./assets/js/user/main.js" type="module"></script>
+  <script src="../../assets/js/user/main.js" type="module"></script>
 
 </body>
 

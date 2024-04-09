@@ -1,10 +1,13 @@
 /**
-* Author:JOSE ROSELLON
-* Date:31/03/2024
-* Descripction: This feature is for user management from Firebase
-*/
+ * Author:JOSE ROSELLON
+ * Date:31/03/2024
+ * Descripction: This feature is for user management from Firebase
+ */
 
-const icons = new Array("./assets/img/icons/eye-fill.svg", "./assets/img/icons/eye-slash-fill.svg");
+const icons = new Array(
+  "/SENA/ADMIREDD/assets/img/icons/eye-fill.svg",
+  "/SENA/ADMIREDD/assets/img/icons/eye-slash-fill.svg"
+);
 
 /**
  * The function `viewText` toggles the visibility of a password input field and updates the
@@ -53,7 +56,7 @@ export function sendData(idForm) {
  */
 export function getDataForm(objForm) {
   try {
-    var elementsForm = objForm.querySelectorAll('input');
+    var elementsForm = objForm.querySelectorAll("input");
     let arrayPasswords = [];
     let json = {};
     let key;
@@ -73,9 +76,9 @@ export function getDataForm(objForm) {
         if (arrayPasswords.length == 2) {
           if (!(arrayPasswords[0].value == arrayPasswords[1].value)) {
             alert("Passwords are not valid");
-            cleanInputPassword(objForm,arrayPasswords);
+            cleanInputPassword(objForm, arrayPasswords);
             arrayPasswords = [];
-           
+
             return false;
           } else {
             key = arrayPasswords[0].id;
@@ -119,9 +122,9 @@ export function cleanForm(objForm) {
  * updates the next sibling element's child node with a specific icon. Finally, it resets the form
  * specified by `objForm
  */
-export function cleanInputPassword(objForm,ArrayInputs) {
-  for(let input of ArrayInputs){
-    input.type="password";
+export function cleanInputPassword(objForm, ArrayInputs) {
+  for (let input of ArrayInputs) {
+    input.type = "password";
     input.nextElementSibling.childNodes[0].src = icons[1];
   }
   objForm.reset();
