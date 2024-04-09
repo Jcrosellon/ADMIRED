@@ -38,12 +38,19 @@
                                         <table class="table table-dark table-striped table-hover">
                                             <thead>
                                                 <tr class="text-center">
-                                                    <th>#</th>
-                                                    <th>NAME</th>
-                                                    <th>NICKNAME</th>
-                                                    <th>IMG</th>
-                                                    <th>VALUE</th>
-                                                    <th>ACTIONS</th>
+                                                <th>ID</th>
+                                                    <th>NOMBRE</th>
+                                                    <th>APELLIDO</th>
+                                                    <th>USUARIO</th>
+                                                    <th>TIPO_DOCUMENTO_ID</th>
+                                                    <th>NO_DOCUMENTO</th>
+                                                    <th>FECHA_NACIMIENTO</th>
+                                                    <th>EMAIL</th>
+                                                    <th>CONTRASENA</th>
+                                                    <th>TELEFONO</th>
+                                                    <th>CARGO_ID</th>
+                                                    <th>TORRE</th>
+                                                    <th>APTO</th>
                                                 </tr>
                                             </thead>
 
@@ -111,12 +118,19 @@
                                                 
                                             <tfoot>
                                                 <tr class="text-center">
-                                                    <th>#</th>
-                                                    <th>NAME</th>
-                                                    <th>NICKNAME</th>
-                                                    <th>IMG</th>
-                                                    <th>VALUE</th>
-                                                    <th>ACTIONS</th>
+                                                    <th>ID</th>
+                                                    <th>NOMBRE</th>
+                                                    <th>APELLIDO</th>
+                                                    <th>USUARIO</th>
+                                                    <th>TIPO_DOCUMENTO_ID</th>
+                                                    <th>NO_DOCUMENTO</th>
+                                                    <th>FECHA_NACIMIENTO</th>
+                                                    <th>EMAIL</th>
+                                                    <th>CONTRASENA</th>
+                                                    <th>TELEFONO</th>
+                                                    <th>CARGO_ID</th>
+                                                    <th>TORRE</th>
+                                                    <th>APTO</th>
                                                 </tr>
                                             </tfoot>
 
@@ -158,16 +172,19 @@
                                 <label for="name">USUARIO</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">TIPO_DOCUMENTO_ID</label>
+                                <select name="tipo_documento">
+                                <option value="1">C.C.</option>
+                                <option value="2">C.E.</option>
+                                <option value="3">NIT.</option>
+                                </select>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
                                 <label for="name">NO_DOCUMENTO</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">FECHA_NACIEMIENTO</label>
+                                <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
+                                placeholder="Ingrese su Fecha de Nacimiento">
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
@@ -182,8 +199,11 @@
                                 <label for="name">TELEFONO</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">CARGO_ID</label>
+                                <select name="cargo">
+                                <option value="1">empleado</option>                             
+                                <option value="3">propietario</option>
+                                <option value="3">residente</option>
+                                </select>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
@@ -193,10 +213,6 @@
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
                                 <label for="name">APTO</label>
                             </div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="valor" placeholder="value" required>
-                                <label for="value" required>VALUE</label>
                             </div>
                         </form>
                         <!-- End Form -->

@@ -114,8 +114,7 @@ implementando-login-crud-firebase
                             <input class="controls" type="text" name="telefono" id="telefono"
                                 placeholder="Ingrese su Numero de telefono">
                             <select name="cargo">
-                                <option value="1">empleado</option>
-                                
+                                <option value="1">empleado</option>                             
                                 <option value="3">propietario</option>
                         <option value="3">residente</option>
                             </select>
