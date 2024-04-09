@@ -63,13 +63,13 @@ class FirebaseGameUser {
         '<div class="btn-group " role="group" aria-label="Basic mixed styles example">' +
         '<button type="button" onclick="showUser(' +
         getId +
-        ')" class="btn btn-info"><img class="img img-fluid" src="../../assets/img/icons/eye-fill.svg"></button>' +
+        ')" class="btn btn-info"><img class="img img-fluid" src="./assets/img/icons/eye-fill.svg"></button>' +
         '<button type="button" onclick="editUser(' +
         getId +
-        ')" class="btn btn-warning"><img class="img img-fluid" src="../../assets/img/icons/pencil-square.svg"></button>' +
+        ')" class="btn btn-warning"><img class="img img-fluid" src="./assets/img/icons/pencil-square.svg"></button>' +
         '<button type="button" onclick="deleteUser(' +
         getId +
-        ')" class="btn btn-danger"><img class="img img-fluid" src="../../assets/img/icons/trash3-fill.svg"></button>' +
+        ')" class="btn btn-danger"><img class="img img-fluid" src="./assets/img/icons/trash3-fill.svg"></button>' +
         "</div>";
       rowTable +=
         "<tr>" +
@@ -80,13 +80,37 @@ class FirebaseGameUser {
         data[user].nombre +
         "</td>" +
         "<td>" +
-        data[user].nickname +
+        data[user].apellido +
         "</td>" +
         "<td>" +
-        data[user].img +
+        data[user].usuario +
         "</td>" +
         "<td class='text-center'>" +
-        data[user].valor +
+        data[user].tipo_documento_id +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].no_documento +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].fecha_nacimiento +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].email +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].contrasena+
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].telefono +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].cargo_id +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].torre +
+        "</td>" +
+        "<td class='text-center'>" +
+        data[user].apto +
         "</td>" +
         "<td class='text-center'>" +
         btnActions +
