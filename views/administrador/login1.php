@@ -65,3 +65,19 @@
 </body>
 
 </html>
+
+
+
+    if ($resultado->num_rows > 0) {
+        // Inicio de sesión exitoso
+        echo "Inicio de sesión exitoso";
+        header("Location: /SENA/ADMIREDD/?c=pqr&m=pqr", true, 301);
+        // Puedes redirigir o realizar acciones posteriores al inicio de sesión aquí
+    } else {
+        // Credenciales incorrectas
+        echo "Correo electrónico o contraseña incorrectos";
+    }
+}
+
+$conexion->close(); // Cerrar conexión
+?>

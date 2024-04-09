@@ -46,7 +46,64 @@
                                                     <th>ACTIONS</th>
                                                 </tr>
                                             </thead>
+implementando-login-crud-firebase
                                             <tbody id="tbody">
+
+                                            <tbody>
+                                                <?php
+                                                // LOOP TILL END OF DATA
+                                                while ($rows = $resultado->fetch_assoc()) {
+                                                    ?>
+                                                    <tr>
+                                                        <!-- FETCHING DATA FROM EACH ROW OF EVERY COLUMN -->
+                                                        <td>
+                                                            <?php echo $rows['ID']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['NOMBRE']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['APELLIDO']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['USUARIO']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['TIPO_DOCUMENTO_ID']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['NO_DOCUMENTO']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <? echo $rows['FECHA_NACIMIENTO'] ?>
+                                                            <?php echo $rows['FECHA_NACIEMIENTO']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['EMAIL']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['CONTRASENA']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['TELEFONO']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['CARGO_ID']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['TORRE']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $rows['APTO']; ?>
+                                                        </td>
+                                                        <td>
+                                                            
+                                                            <a href="?c=administrador&m=edit&userId=<?php echo $rows['ID']; ?>"
+                                                                class="boton2">Editar</a>
+                                                            <a href="?c=administrador&m=destroy&userId=<?php echo $rows['ID']; ?>"
+                                                                class="boton3">Eliminar</a>
+
+                                                        </td>
 
                                             </tbody>
                                             <tfoot>
