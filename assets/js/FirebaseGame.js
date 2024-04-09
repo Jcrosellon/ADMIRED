@@ -8,7 +8,7 @@ class FirebaseGameUser {
   /**this the method constructor*/
   constructor(idTbody) {
     this.objTbody = document.getElementById(idTbody);
-    this.URL = "https://api-restt-default-rtdb.firebaseio.com/api/users";
+    this.URL = "https://login-firebase-225e1-default-rtdb.firebaseio.com/Api/User";
   }
 
   /**this the method for get data users*/

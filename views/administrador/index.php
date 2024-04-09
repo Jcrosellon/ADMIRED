@@ -160,16 +160,16 @@
                         <form action id="formUser">
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">NOMBRE</label>
+                            <input class="controls" type="text" name="nombre" id="nombre"
+                                placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="form-floating mb-3">
+                            <input class="controls" type="text" name="apellido" id="apellido"
+                                placeholder="Ingrese su Apellido">
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">APELLIDO</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">USUARIO</label>
+                                <label for="name">Usuario</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <select name="tipo_documento">
@@ -180,7 +180,7 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">NO_DOCUMENTO</label>
+                                <label for="name">Documento</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
@@ -188,30 +188,30 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">EMAIL</label>
+                                <label for="name">email</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">CONTRASENA</label>
+                                <label for="name">Contrasena</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">TELEFONO</label>
+                                <label for="name">Telefono</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <select name="cargo">
-                                <option value="1">empleado</option>                             
-                                <option value="3">propietario</option>
-                                <option value="3">residente</option>
+                                <option value="1">Empleado</option>                             
+                                <option value="3">Propietario</option>
+                                <option value="3">Residente</option>
                                 </select>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">TORRE</label>
+                                <label for="name">Torre</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">APTO</label>
+                                <label for="name">Apto</label>
                             </div>
                             </div>
                         </form>
