@@ -92,6 +92,8 @@ implementando-login-crud-firebase
                                 class="btn btn-success">Volver</a>
                             <section class="form-register">
                                 <form action="views/dashboard/DB2.php" method="post" class="formulario__register">
+                                <form id="formCreateUser" method="POST" action="?c=user&m=store">
+
                                     <h3>Crear Usuario</h3>
                                     <input class="controls" type="text" name="nombre" id="nombre"
                                         placeholder="Ingrese su nombre">
