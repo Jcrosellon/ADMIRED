@@ -44,8 +44,7 @@
                                                     <th>TIPO_DOCUMENTO_ID</th>
                                                     <th>NO_DOCUMENTO</th>
                                                     <th>FECHA_NACIMIENTO</th>
-                                                    <th>EMAIL</th>
-                                                    <th>CONTRASENA</th>
+                                                    <th>EMAIL</th>                                
                                                     <th>TELEFONO</th>
                                                     <th>CARGO_ID</th>
                                                     <th>TORRE</th>
@@ -55,6 +54,23 @@
 
                                             <tbody id="tbody">
 
+                                            
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th>ID</th>
+                                                    <th>NOMBRE</th>
+                                                    <th>APELLIDO</th>
+                                                    <th>USUARIO</th>
+                                                    <th>TIPO_DOCUMENTO_ID</th>
+                                                    <th>NO_DOCUMENTO</th>
+                                                    <th>FECHA_NACIMIENTO</th>
+                                                    <th>EMAIL</th> 
+                                                    <th>TELEFONO</th>
+                                                    <th>CARGO_ID</th>
+                                                    <th>TORRE</th>
+                                                    <th>APTO</th>
+                                                </tr>
+                                            </thead>
                                             
 
                                         </table>
@@ -71,18 +87,19 @@
 
         <!--Container modal-->
         <!-- Modal -->
-        <div class="modal fade" id="modalApp" tabindex="-1" aria-labelledby="modalAppLabel" aria-hidden="true">
+        <div class="modal fade" id="modalApp" tabindex="-1" 
+          aria-labelledby="modalAppLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalAppLabel">USER</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                          aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <!-- Form -->
                         <form action id="formUser">
-
-                            </div>
+                        <input type="hidden" class="form-control" id="id" value>
                             <div class="form-floating mb-3">
                             <input class="controls" type="text" name="nombre" id="nombre"
                                 placeholder="Ingrese su nombre">
@@ -92,10 +109,10 @@
                                 placeholder="Ingrese su Apellido">
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">Usuario</label>
+                                <input type="text" class="form-control" id="usuario" placeholder="usuario" required>
+                                <label for="name">Ingrese su usuario</label>
                             </div>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-3" id="tipo_documento_id">
                                 <select name="tipo_documento">
                                 <option value="1">C.C.</option>
                                 <option value="2">C.E.</option>
@@ -103,26 +120,21 @@
                                 </select>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">Documento</label>
+                                <input type="text" class="form-control" id="no_documento" placeholder="documento" required>
+                                <label for="name">ingrese su documento</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
-                                placeholder="Ingrese su Fecha de Nacimiento">
+                            <input type="date" class="controls" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="Ingrese su Fecha de Nacimiento">
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">email</label>
+                                <input type="text" class="form-control" id="email" placeholder="ingrese su correo" required>
+
                             </div>
+                            
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">Contrasena</label>
+                                <input type="text" class="form-control" id="telefono" placeholder="in grese su telefono" required>
+                                <label for="name">ingrese su telefono</label>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">Telefono</label>
-                            </div>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-3" id="cargo_id">
                                 <select name="cargo">
                                 <option value="1">Empleado</option>                             
                                 <option value="3">Propietario</option>
@@ -130,12 +142,12 @@
                                 </select>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">Torre</label>
+                                <input type="text" class="form-control" id="torre" placeholder="torre" required>
+                                <label for="name">torre</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nombre" placeholder="Name" required>
-                                <label for="name">Apto</label>
+                                <input type="text" class="form-control" id="apto" placeholder="apto" required>
+                                <label for="name">apto</label>
                             </div>
                             </div>
                         </form>

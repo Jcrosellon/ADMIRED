@@ -96,10 +96,7 @@ class FirebaseGameUser {
         "</td>" +
         "<td class='text-center'>" +
         data[user].email +
-        "</td>" +
-        "<td class='text-center'>" +
-        data[user].contrasena+
-        "</td>" +
+        "</td>" + 
         "<td class='text-center'>" +
         data[user].telefono +
         "</td>" +
@@ -125,9 +122,11 @@ class FirebaseGameUser {
    * @param json user
    */
   async setCreateUser(data) {
+    
     return fetch(this.URL + ".json", {
       method: "POST",
       headers: {
+        
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
