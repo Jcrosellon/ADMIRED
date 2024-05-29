@@ -72,6 +72,7 @@
                                                         <td><?php echo $rows['TORRE']; ?></td>
                                                         <td><?php echo $rows['APTO']; ?></td>
                                                     <td>
+
                                                         <a href="?c=administrador&m=edit&userId=<?php echo $rows['ID']; ?>" class="boton2">Editar</a>
                                                         <a href="?c=administrador&m=destroy&userId=<?php echo $rows['ID']; ?>" class="boton3">Eliminar</a>
 
